@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %} App2 Page {% endblock %}
+
+{% block content %}
+<h1>This app 2 page</h1>
+<form method="post" action="{{ url_for('index') }}">
+    <input type="text" name="username" placeholder="Username"><br><br>
+    <input type="password" name="password" placeholder="Password"><br><br>
+    <input type="submit" value="Login">
+</form>
+
+<h1>File Upload</h1>
+<form action="{{ url_for('file_upload') }}" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Upload File">
+</form>
+{% endblock %}
