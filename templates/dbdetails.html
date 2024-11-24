@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %} DB Person Details Page {% endblock %}
+
+{% block content %}
+<h1>Person Details</h1>
+<h3>Person      : {{ person.pid }}</h3>
+<h3>Person Name : {{ person.name }}</h3>
+<h3>Person Age  : {{ person.age }}</h3>
+<h3>Person Job  : {{ person.job }}</h3>
+{% endblock %}
