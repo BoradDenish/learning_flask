@@ -9,7 +9,7 @@ python app.py
 # If Database Migrate only for MySQL and PostgreSQL
 
 1.
-set FLASK_APP=run.py
+set FLASK_APP=dbrun.py
 
 2.
 flask db init  # This creates a migrations folder
