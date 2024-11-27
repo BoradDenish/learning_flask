@@ -11,8 +11,8 @@ python app.py
 1.
 set FLASK_APP=dbrun.py
 
-2.
-flask db init  # This creates a migrations folder
+2. # This creates a migrations folder
+flask db init
 
 3.
 flask db migrate -m "Initial migration"

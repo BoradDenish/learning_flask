@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %} Index Page {% endblock %}
+
+{% block content %}
+<h1>Main BluePrint</h1>
+<a href="{{ url_for('todos.index')}}">Todos</a>
+<a href="{{ url_for('people.index')}}">People</a>
+
+{% endblock %}

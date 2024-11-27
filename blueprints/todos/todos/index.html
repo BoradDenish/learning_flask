@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %} Index Page {% endblock %}
+
+{% block content %}
+    <h1>This Todos Page</h1>
+    <ul>
+        {% for todo in todos %}
+            <li>{{ todos }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
