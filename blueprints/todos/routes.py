@@ -8,13 +8,13 @@ todos = Blueprint('todos', __name__, template_folder='templates')
 @todos.route('/')
 def index():
     todos = Todo.query.all()
-    return render_template('blueprints/todos/todos/index.html', todos=todos)
+    return render_template('todos/index.html', todos=todos)
 
 
 @todos.route('/create', methods=['GET', 'POST'])
 def create():
     if request.method == 'GET':
-        return render_template('blueprints/todos/todos/create.html')
+        return render_template('todos/create.html')
     elif request.method == 'POST':
         title       = request.form.get('title')
         description = request.form.get('description')
