@@ -35,6 +35,7 @@ def methods():
 def greet(name):
     return f"Hello {name}"
 
+# paramas call in router
 @app.route('/add/<int:num1>/<int:num2>')
 def add(num1, num2):
     return f"{num1} + {num2} = {num1 + num2}"
